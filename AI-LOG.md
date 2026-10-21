@@ -10,6 +10,11 @@ Log yang jujur tidak mengurangi nilai, sebanyak apa pun AI dipakai. Yang mengura
 - Diubah: (apa yang kamu ubah atau perbaiki dari hasil AI, dan kenapa)
 
 ## (Entri berikutnya)
-- Prompt:
-- Dipakai:
-- Diubah:
+- Prompt: tolong perbaiki dan sesuaikan dengan konteks requirement ini **seluruh dokumen requirement**
+- Dipakai: bagian App.tsx, FormPeminjaman (diubah), Daftar, Api (perubahan)
+- Diubah: bagian App.tsx, FormPeminjaman (diubah), Daftar, Api (perubahan)
+
+## Form peminjaman
+- Prompt: Sesuaikan halaman dengan aturan peminjaman dan dukung perubahan data.
+- Dipakai: `src/components/FormPeminjaman.tsx` untuk form dan validasi; `src/components/Daftar.tsx` untuk filter, detail, edit, dan hapus; `src/api/http.ts`, `src/api/peminjaman.ts`, dan `src/api/sumberDaya.ts` untuk kontrak API; `src/App.tsx` untuk menghubungkan komponen.
+- Diubah: Tanggal dikirim sebagai `YYYY-MM-DD`, pesan error API ditampilkan, dan daftar dimuat ulang setelah perubahan sukses. Validasi tanggal kalender, nama setelah trim, maksimal 3 slot untuk persona B, serta jumlah terhadap stok dilakukan sebelum pengiriman.
